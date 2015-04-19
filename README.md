@@ -17,11 +17,11 @@ Bitnet is about an binary, international, universal binary language where web co
 
 ## Node structure
 
-A node is a ontological footprint, which has the following binary structure.
-byte 0-8 is the node signature.
+A node is a ontological footprint, which consists of binary setences.
 
-## The signature
-The signature consists of 64 bytes, (four representing id of entities and states and then stores context specific information.)
+## A setence
+The setence consists of 64 bytes signature which represents the setence meaning. 
+
 * first integer describes the subject. 
 * next integer describes the predicate. 
 * third integer describes the predicate extension.
@@ -31,7 +31,8 @@ The signature consists of 64 bytes, (four representing id of entities and states
 * seventh integeer is the adverbial
 * eight integer is an unique identity.
 
-
+Then
+it follows ASCII text with identifiers of the entities of the setence, divided with 0x00 byte ('\0')
 
 
 
